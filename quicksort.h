@@ -4,17 +4,6 @@ void permute(int array[], int n){
 	}
 }
 
-int partition(int array[], int lhs, int rhs){
-	int pivot = array[lhs];
-	while (lhs<rhs){
-		while (lhs < rhs&&array[rhs] > pivot) rhs--;
-		array[lhs] = array[rhs];
-		while (lhs < rhs&&array[lhs] < pivot) lhs++;
-		array[rhs] = array[lhs];
-	}
-	array[lhs] = pivot;
-	return lhs;
-}
 
 int partition2(int array[], int lhs, int rhs){
 	int pivot = array[lhs];
