@@ -1,7 +1,7 @@
 #define T_max (~(1<<31))
 void permute(int array[], int n){
 	for (int i = n; i > 0; i--){
-		std::swap(array[n - 1], array[rand() % i]);
+		std::swap(array[i - 1], array[rand() % i]);
 	}
 }
 
