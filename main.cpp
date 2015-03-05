@@ -14,6 +14,7 @@ int main()
 	print(a, M);
 
 	quicksort(a, 0,M - 1);
+	//mergesort(a,0,M-1);
 	print(a, M);
 	system("pause");
 	return 0;
